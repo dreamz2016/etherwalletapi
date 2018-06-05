@@ -1,0 +1,67 @@
+{
+  "name": "ethereumjs-wallet",
+  "version": "0.6.0",
+  "description": "Utilities for handling Ethereum keys",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover _mocha",
+    "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
+    "lint": "standard",
+    "prepublish": "npm run lint && npm run test",
+    "test": "mocha ./test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethereumjs/ethereumjs-wallet.git"
+  },
+  "keywords": [
+    "ethereum",
+    "wallets",
+    "keys"
+  ],
+  "author": "Alex Beregszaszi <alex@rtfs.hu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethereumjs/ethereumjs-wallet/issues"
+  },
+  "homepage": "https://github.com/ethereumjs/ethereumjs-wallet",
+  "dependencies": {
+    "aes-js": "^0.2.4",
+    "big-number": "^0.4.0",
+    "bignumber": "^1.1.0",
+    "bignumber.js": "^4.1.0",
+    "body-parser": "^1.18.3",
+    "bs58check": "^1.3.4",
+    "cookie-parser": "^1.4.3",
+    "ethereumjs-tx": "^1.3.4",
+    "ethereumjs-util": "^4.5.0",
+    "express": "^4.16.3",
+    "express-bearer-token": "^2.1.1",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.15.6",
+    "hdkey": "^0.7.0",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.2.1",
+    "querystring": "^0.2.0",
+    "request": "^2.87.0",
+    "request-json": "^0.6.3",
+    "script": "^0.1.4",
+    "scrypt.js": "^0.2.0",
+    "solc": "^0.4.24",
+    "utf8": "^2.1.2",
+    "uuid": "^2.0.3",
+    "web3": "^0.20.6"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.5.3",
+    "standard": "^5.4.1"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}
